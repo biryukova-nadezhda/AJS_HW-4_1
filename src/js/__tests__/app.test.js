@@ -10,5 +10,5 @@ const handler = test.each(checkObj);
 
 handler('check healf level for %O', (person, expected) => {
   const result = healthLevel(person);
-  expected(result).toBe(expected);
+  expect(result).toBe(expected);
 });
